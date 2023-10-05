@@ -9,13 +9,14 @@
 // passing input via props
 // debugging react applications
 
+// we can start building an app quickly using https://getbootstrap.com/
+// for quick search use - command+p
 
 // PascalCasing
 function Message() {
-    // JSX: Javascript XML
-    const name = "Ashis";
-    return <h1>Hello {name}</h1>;
+  // JSX: Javascript XML
+  const name = "Ashis";
+  return <h1>Hello {name}</h1>; // React.createElement("h1")
 }
 
 export default Message;
-

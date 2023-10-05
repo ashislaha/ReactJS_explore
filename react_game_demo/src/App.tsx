@@ -1,7 +1,7 @@
+import ListGroup from "./components/ListGroup";
 
-import Message from "./Message";
 function App() {
-  return <div><Message></Message></div>
+  return <ListGroup></ListGroup>;
 }
 
 export default App; // export the app component
