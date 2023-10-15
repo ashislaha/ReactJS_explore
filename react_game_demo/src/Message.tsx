@@ -20,6 +20,30 @@
 // Components -- re-usability and separate of concerns
 // It consists of "HTML", "CSS" and "Javascripts"
 
+// In react, a component can return only one element, it will give us an error if we return multiple element
+// But we can solve it using "Fragment"
+// we can use <> <-- default signal to React to use "Fragment"
+
+// we can use { } to render data dynamically
+// Render based on certain condition
+
+// when we define a local variable it is not accessibile to the react component
+// we can "Hook" it between variable and its setter method
+// Each component should have its state.
+
+// Passing data via props
+// Props are input to the component
+// we can pass { items: [], heading: String }
+// using an "interface", we can define the shape of an object
+
+// once a click event happens, let's notify the ohter component.
+
+// State vs Props
+// state: Internal data managed by a component. It is mutable.
+// Props: Input pass to a component. We should treat props like immutable.
+
+// debugging - react developer tool
+
 // PascalCasing
 function Message() {
   // JSX: Javascript XML
