@@ -12,6 +12,14 @@
 // we can start building an app quickly using https://getbootstrap.com/
 // for quick search use - command+p
 
+// Learning module:
+// 1. React core syntax and JSX
+// 2. Working with components
+// 3. Working with data
+
+// Components -- re-usability and separate of concerns
+// It consists of "HTML", "CSS" and "Javascripts"
+
 // PascalCasing
 function Message() {
   // JSX: Javascript XML
