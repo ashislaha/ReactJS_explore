@@ -14,9 +14,30 @@ import { useState } from "react";
 // Each component should have its state.
 
 // Passing data via props
+// Props are input to the component
+// we can pass { items: [], heading: String }
+// using an "interface", we can define the shape of an object
 
-function ListGroup() {
-  let items = ["New York", "Delhi", "Kolkata"];
+// once a click event happens, let's notify the ohter component.
+
+// State vs Props
+// state: Internal data managed by a component. It is mutable.
+// Props: Input pass to a component. We should treat props like immutable.
+
+// debugging - react developer tool
+
+interface ListGroupProps {
+  items: String[];
+  heading: String;
+
+  // define a function which will be used for our callbacks to the caller.
+  onSelectItem: (item: String) => void;
+}
+
+function ListGroup(props: ListGroupProps) {
+  const items = props.items;
+  const heading = props.heading;
+
   // Hook
   const [selectedIndex, setSelectedIndex] = useState(-1);
   // arr[0]; // variable like selectedIndex
@@ -40,7 +61,8 @@ function ListGroup() {
       onClick={() => {
         console.log(item, index);
         setSelectedIndex(index);
-        handleClick; // we will pass the reference here in
+        props.onSelectItem(item);
+        // handleClick; // we will pass the reference here in
       }}
     >
       {item}
@@ -49,7 +71,7 @@ function ListGroup() {
 
   return (
     <Fragment>
-      <h1>List</h1>
+      <h1>{heading}</h1>
       {getMessage()}
       <ul className="list-group">{mappedItems}</ul>
     </Fragment>
