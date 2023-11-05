@@ -1,3 +1,8 @@
+// html (hypertext markup language)
+// it contains element which has tag and content like <h1>header</h1>
+// every element has multiple attributes property which makes it live.
+// <tagName id=ID_value> it helps to identify the element uniquely.
+
 // tsx is used for typescript + react file
 // normal ts is used for normal typescript purpose
 // we will create component using "function based approach"
@@ -43,6 +48,27 @@
 // Props: Input pass to a component. We should treat props like immutable.
 
 // debugging - react developer tool
+
+// search emmet.io cheat sheet for quick code reference.
+// like ! for basic html set up, html:5 for boiler plate code
+// for spaces, we need to use html entities, we can use &(entity_name; or &#(entity_number);
+// you can use lorem50 to add random 50 chars
+// <hr> is used for horizontal line
+
+// <input> element to fetch any input
+// type="text" // type="password" // "radiobutton", "checkbox"
+// name="firstName"
+
+// input can be a "textarea"
+// use <select></select> to give "drop down" option using <option></option>
+// <fieldset></fieldset> to define a separate area
+
+// block level tags which takes the entire horizontal space like <p></p>, <table></table>,
+// inline tags takes only the space based on content like <em></em>
+// semantic tag & non-semantic tags
+
+// <a href="URL" target="_blank"> <img src="" /> </a> so we can create an image with URL and
+// it can open in another page
 
 import React from "react";
 import ReactDOM from "react-dom/client";

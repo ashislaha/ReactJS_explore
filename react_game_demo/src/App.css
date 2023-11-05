@@ -1,0 +1,51 @@
+/* css helps to create muscle on top of skeleton 
+It contains a set of rules/properties, it can be predefined of user defined.
+Property: value --> (1). defined (2). Predefined.
+A property can be (1). color (2) font-family (3). text-alignment 
+
+How to add css (1). inline (2). internal (3) external
+
+(1). Inline - <tagName style="property:value"> </tagName>
+(2). internal - let's use <style></style> tag and define multiple selector and use it
+<head>
+    <style>
+        h2{ color: brown; }
+    </style>
+</head>
+
+(3). external - create a separate file like this and use it for the rest of the project using link tag
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+using selector, we can select css style with different way. 
+*/
+
+h3 {
+    color: blue;
+}
+
+/* class selector --> you can use it as <li class="special"> item one </li> */
+
+.special {
+    color: red;
+    font-weight: bold;
+}
+
+/* sudo class selector like hover, visited etc */
+a:hover {
+    color: green;
+}
+
+/* id selector using # tag */
+/* attribute selector <-- we can select an attribute of a tag */
+/* It will make red only those item of the list where class attribute is present */
+li[class] {
+    color: red;
+}
+
+/* everything selector / universal 
+* {
+    color: red;
+}
+*/
