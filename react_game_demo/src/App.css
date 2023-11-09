@@ -49,3 +49,31 @@ li[class] {
     color: red;
 }
 */
+
+/*
+    cascading
+        inheritance
+            specificity
+
+    cascading -- order is important
+    specificity -- tie will be break based on specificity preference.
+    
+    inheritance -- 
+    as <p></p> is a child of <div></div>, so <div> styling rule is also applied to it.
+    <style> 
+        div {
+            color: blue;
+        }
+    </style>
+    <div>
+        <p>
+            This is inside of the paragraph
+        </p>
+    </div>
+
+    along with that few properties can be -- (1). inherit (2). initial (3). unset
+    
+    overflow: when the content is going outside its box model. We can control it.
+    overflow: visible (default) -- outside content will be visible
+    
+*/
